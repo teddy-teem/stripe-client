@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+  --light-grey: #F6F9FC;
+  --accent-color: #607eff;
+  --radius: 3px;
+}
+
+body {
+  padding: 25px;
+  font-family: 'Rubik';
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+main {
+  width: 600px;
+}
+
+form > * {
+  margin: 10px 0;
+}
+
+button {
+  background-color: var(--accent-color);
+}
+
+button {
+  background: var(--accent-color);
+  border-radius: var(--radius);
+  color: white;
+  border: 0;
+  padding: 12px 18px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+button:hover {
+  filter: contrast(115%);
+}
+button:active {
+  transform: translateY(0px) scale(0.98);
+  filter: brightness(0.8);
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: none;
+}
+
+input, select {
+  display: block;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+small {
+  font-size: .6em;
+}
+
+fieldset, input, select {
+  border: 1px solid #efefef;
+}
+
+#payment-form {
+  border: #F6F9FC solid 1px;
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 30px 50px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
+}
+
+.success-payment{
+  text-align: center;
+  color: rgb(57, 255, 130);
+}
+.error-payment{
+  text-align: center;
+  color: rgb(230, 52, 20);
+}
+.loading{
+  text-align: center;
+  color: rgb(33, 145, 250);
+}
+
+.ElementsApp input {
+  font-size: 16px !important;
+}
